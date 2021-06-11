@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import './style/Recipe.css'
+import { Link } from 'react-router-dom'
 //import { addShipping } from './actions/cartActions'
-class Recipe extends Component{
+class Recipe extends Component {
 
     componentWillUnmount() {
             if(this.refs.shipping.checked)
@@ -31,7 +32,8 @@ class Recipe extends Component{
                         <li className="collection-item"><b>Total: {this.props.total} $</b></li>
                     </div>
                     <div className="checkout">
-                        <button className="waves-effect waves-light btn" id="checkoutBtn">Checkout</button>
+                        
+                        <Link to="/Checkout" className="waves-effect waves-light btn" id="checkoutBtn">Checkout</Link>
                     </div>
                  </div>
         )
