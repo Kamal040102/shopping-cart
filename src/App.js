@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Cart from './components/Cart';
+import Footer from './components/Footer';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import './App.css'
 
 class App extends Component {
   render() {
@@ -15,6 +17,7 @@ class App extends Component {
                     <Route path="/cart" component={Cart}/>
                   </Switch>
              </div>
+             <Footer/>
        </BrowserRouter>
       
     );

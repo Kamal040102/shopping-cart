@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { addToCart } from './actions/cartActions'
+import './style/Home.css'
 
  class Home extends Component{
 
@@ -30,7 +31,7 @@ import { addToCart } from './actions/cartActions'
         return(
             <div className="container">
                 <h3 className="center">Populars</h3>
-                <div className="box" style={{display:"flex", flexWrap:"wrap"}}>
+                <div className="box">
                     {itemList}
                 </div>
             </div>

@@ -1,0 +1,36 @@
+/* @media only screen and (max-width:2000px){
+    .item-img{
+        min-width:35%;
+        max-width: 35%;
+        
+    }
+
+    .item-img img{
+        min-width: 50%;
+        max-width: 50%;
+    }
+} */
+
+@media only screen and (min-width:537px){
+    .item-img img{
+        width:164px;
+        height: 201px;
+        margin-right:40px;
+
+    }
+}
+
+@media only screen and (max-width:537px){
+    .item-img img{
+        width:134px;
+        height: 171px;
+        margin-right:40px;
+
+    }
+}
+
+@media only screen and (max-width:504px){
+    .collection .collection-item.avatar{
+        padding-left: 20px;
+    }
+}

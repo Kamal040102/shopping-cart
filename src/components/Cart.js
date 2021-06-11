@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import Recipe from './Recipe';
 import { removeItem,addQuantity,subtractQuantity } from './actions/cartActions'
+import './style/Cart.css'
 class Cart extends Component{
 
     //to remove the item completely
@@ -25,12 +26,12 @@ class Cart extends Component{
                 this.props.items.map(item=>{
                     return(
                         <li className="collection-item avatar" style={{display:"flex", margin:"1rem"}} key={item.id}>
-                                    <div className="item-img" style={{width:"35%", alignItems:"center"}}> 
-                                        <img src={item.img} alt={item.img} className="" style={{width:"50%"}}/>
+                                    <div className="item-img"> 
+                                        <img src={item.img} alt={item.img}/>
                                     </div>
                                 
                                     <div className="item-desc" style={{width:"100%"}}>
-                                        <span className="title">{item.title}</span>
+                                        <b><span className="title">{item.title}</span></b>
                                         <p>{item.desc}</p>
                                         <p><b>Price: ₹ {item.price}</b></p> 
                                         <p>
@@ -66,7 +67,8 @@ class Cart extends Component{
 
 const mapStateToProps = (state)=>{
     return{
-        items: state.addedItems
+        items: state.addedItems,
+        //addedItems : state.addedItems
     }
 }
 

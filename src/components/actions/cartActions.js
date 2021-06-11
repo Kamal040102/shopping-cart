@@ -2,7 +2,7 @@ import {ADD_TO_CART} from './action-types/cart-action'
 import {REMOVE_ITEM} from './action-types/cart-action'
 import {SUB_QUANTITY} from './action-types/cart-action'
 import {ADD_QUANTITY} from './action-types/cart-action'
-import {ADD_SHIPPING} from './action-types/cart-action'
+// import {ADD_SHIPPING} from './action-types/cart-action'
 
 export const addToCart = (id) => {
     return {
@@ -31,10 +31,9 @@ export const addQuantity = (id) =>{
     }
 }
 
-export const addShipping = (id) => {
-    return{
-        type: ADD_SHIPPING,
-        id
-    }
-}
-
+// export const addShipping = (id) =>{
+//     return {
+//         type: ADD_SHIPPING,
+//         id
+//     }
+// }
